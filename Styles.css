@@ -1,0 +1,634 @@
+/* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 70px;
+    background-color: #EEEEEE;
+}
+
+.navbar__logo img {
+    width: 30px;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: #141615;
+    font-size: 16px;
+    letter-spacing: 0,6px;
+    font-weight: 500;
+}
+
+.navbar__link:hover {
+    color: #888;
+}
+
+.navbar__actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbar__action-btn img {
+    width: 22px;
+}
+
+/* Hero */
+
+header {
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    display: block;
+    
+}
+
+.hero_text {
+    position: absolute;
+    left: 3rem;
+    top: 3rem;
+    
+}
+
+.hero_text h1{
+    font-family: "Abhaya Libre", serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 2px;
+    color: #FFFFFF;
+    font-size: 70px ;
+    margin: 0;    
+}
+
+.hero_text p {
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0;
+
+}
+
+/* sección cards */
+
+.cars_setion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card1 {
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card1 h2{
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.card1 p {
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        margin: 0;
+}
+
+.car-image {
+    width: 100%;
+    max-width: 380px;
+    margin: 1.5rem auto;
+    display: block;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.card-button {
+    text-decoration: none;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.card_color {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.card_color span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Colores individuales */
+.card_color-silver {
+    background-color: #c0c0c0;
+}
+
+.card_color-red {
+    background-color: #c0392b;
+}
+
+.card_color-blue {
+    background-color: #2c3e8c;
+}
+
+.card_color-black {
+    background-color: #1a1a1a;
+}
+
+.card_color-yellow {
+    background-color: #d4a017;
+}
+
+/* El círculo activo tiene borde */
+.card_color-active {
+    outline: 2px solid #555;
+    outline-offset: 2px;
+}
+
+/* Sección dealer */
+
+/* Parte superior — fondo claro */
+.Find_mercedes {
+    padding: 3rem;
+}
+
+.Find_mercedes h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    max-width: 800px;
+    font-family: "Abhaya Libre", serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 1px;
+}
+
+.Find_mercedes p {
+    font-size: 0.95rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0;
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+/* Contenedor del mapa — punto de referencia */
+.map {
+    position: relative;
+}
+
+.mundo {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    display: block;
+}
+
+/* Tarjeta flotante sobre el mapa */
+.store_card {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    background-color: rgba(173, 173, 173, 0.6);
+    /* gris semitransparente */
+    /* backdrop-filter: blur(4px); */
+    /* desenfoque de cristal */
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 320px;
+
+}
+
+.store_card h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0 0 1.5rem 0;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.store_card .button {
+    text-decoration: none;
+        color: #1a1a1a;
+        background-color: #ffffff;
+        padding: 0.6rem 1.4rem;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+/* Sección detalles */
+
+.detalles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* La card */
+.Card2 {
+    background-color: #e8e8e8;
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 280px;
+        /* ancho fijo — no se encoge */
+        flex-shrink: 0;
+}
+
+.Card2 h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0;
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+/* La imagen ocupa todo el ancho de la card */
+.car-inside {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Botón empujado al fondo */
+.Card2 .card-button {
+  text-decoration: none;
+        color: #1a1a1a;
+        background-color: #ffffff;
+        padding: 0.6rem 1.4rem;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: inline-block;
+            align-self: flex-start;
+}
+
+
+/* seccion carro rojo */
+
+/* Imagen del coche — ocupa todo el ancho */
+.red-car img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    display: block;
+}
+
+/* Parte inferior — dos columnas */
+.carro_rojo_contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 4rem 3rem;
+    gap: 3rem;
+}
+
+/* Columna izquierda — texto */
+.contenido h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 2rem 0;
+    font-family: "Abhaya Libre", serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 1px;
+}
+
+.contenido p {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.6;
+    max-width: 320px;
+    margin: 0 0 2rem 0;
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.contenido a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 2px;
+}
+
+/* Columna derecha — imagen de la rueda */
+.red-detail img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/* footer */
+
+.footer {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 4rem 3rem;
+}
+
+/* Parte 1 — newsletter centrada */
+.contact-form {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    /* centra el bloque horizontalmente */
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #333;
+    /* línea separadora */
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.contact-form p {
+    color: #aaa;
+    margin: 0 0 2rem 0;
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+/* Input + botón juntos en una cápsula */
+.form-input-group {
+    display: flex;
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 999px;
+    overflow: hidden;
+    /* recorta los bordes del input y botón */
+    margin-bottom: 1.5rem;
+}
+
+.form-input-group input {
+    flex: 1;
+    /* ocupa todo el espacio disponible */
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.form-button {
+    background-color: #ffffff;
+    color: #0a0a0a;
+    border: none;
+    padding: 1rem 1.8rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+/* Checkbox + texto */
+.form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.form-check p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #aaa;
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+/* Iconos sociales */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-media img {
+    width: 24px;
+}
+
+/* Parte 2 — columnas de links */
+.footer_columns {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    gap: 10rem;
+    padding-top: 4rem;
+        margin: 0 auto;
+}
+
+.footer__title {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 1.5rem 0;
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__item {
+    margin-bottom: 0.8rem;
+}
+
+.footer__item a {
+    text-decoration: none;
+    color: #888;
+    font-size: 0.9rem;
+    font-family: "ABeeZee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.footer__item a:hover {
+    color: #ffffff;
+}
+
+/* RESPONSIVE TABLET*/
+
+
+@media (max-width: 1024px) {
+
+    /* Cards: de 2 columnas a 1 */
+    .cars_setion {
+        grid-template-columns: 1fr;
+    }
+
+    /* Detalles: de 3 columnas a 1 */
+    .detalles {
+        display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            gap: 1rem;
+            padding: 1rem;
+            scrollbar-width: none;
+        }
+        
+        .detalles::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    /* Carro rojo: de 2 columnas a 1 */
+    .carro_rojo_contenido {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer columnas: más espacio */
+    .footer_columns {
+        max-width: 100%;
+
+}
+
+/* RESPONSIVE MOVIL*/
+
+
+@media (max-width: 768px) {
+
+    /* Navbar: oculta el menú y acciones */
+    .navbar__menu {
+        display: none;
+    }
+
+    .navbar__actions {
+        display: none;
+    }
+
+    /* Hero: texto más pequeño */
+    .hero_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    /* Cards */
+    .cars_setion {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    /* Título dealer */
+    .Find_mercedes h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Detalles */
+    .detalles {
+        display: flex;
+            flex-direction: row;
+            /* cards en fila horizontal */
+        
+            overflow-x: auto;
+            /* activa el scroll horizontal */
+            gap: 1rem;
+            padding: 1rem;
+        /* grid-template-columns: 1fr;
+        padding: 1rem; */
+    }
+
+        .detalles::-webkit-scrollbar {
+            display: none;
+            /* Chrome y Safari */
+        }
+
+    /* Carro rojo */
+    .carro_rojo_contenido {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+
+    .red-detail img {
+        height: 300px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer_columns {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+}
