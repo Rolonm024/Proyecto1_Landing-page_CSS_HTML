@@ -1,3 +1,18 @@
+/* variables */
+:root {
+    --color-negro-textos:#1a1a1a;
+    --color-fondo-footer:#0a0a0a;
+    --color-textos-inverso:#ffffff;
+    --color-fondo-navbar:#eeeeee;
+    --fuente-parrafos:"ABeeZee", sans-serif;
+    --fuente-titulos:"Abhaya Libre",serif;
+    --color-textos-secundarios: #444;
+
+}
+
+
+
+
 /* Navbar */
 
 .navbar {
@@ -6,7 +21,7 @@
     justify-content: space-between;
     padding: 0 2rem;
     height: 70px;
-    background-color: #EEEEEE;
+    background-color: var(--color-fondo-navbar);
 }
 
 .navbar__logo img {
@@ -19,9 +34,17 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal; 
+}
+
+.navbar__menuh {
+    display: none;
+    background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
 }
 
 .navbar__link {
@@ -48,11 +71,11 @@
 
 /* Hero */
 
-header {
+.hero {
     position: relative;
 }
 
-.hero {
+.hero_img {
     width: 100%;
     height: 90vh;
     object-fit: cover;
@@ -68,21 +91,21 @@ header {
 }
 
 .hero_text h1{
-    font-family: "Abhaya Libre", serif;
+    font-family: var(--fuente-titulos);
         font-weight: 400;
         font-style: normal;
         letter-spacing: 2px;
-    color: #FFFFFF;
+    color: var(--color-textos-inverso);
     font-size: 70px ;
     margin: 0;    
 }
 
 .hero_text p {
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
     letter-spacing: 2px;
-    color: #FFFFFF;
+    color: var(--color-textos-inverso);
     font-size: 16px;
     margin: 0;
 
@@ -106,7 +129,7 @@ header {
 }
 
 .card1 h2{
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
     font-size: 30px;
@@ -115,7 +138,7 @@ header {
 }
 
 .card1 p {
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
         font-size: 16px;
@@ -138,12 +161,12 @@ header {
 
 .card-button {
     text-decoration: none;
-    color: #1a1a1a;
+    color:var(--color-negro-textos);
     background-color: #ffffff;
     padding: 0.6rem 1.4rem;
     border-radius: 999px;
     font-size: 0.85rem;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
 }
@@ -200,7 +223,7 @@ header {
     font-weight: 400;
     margin: 0 0 1rem 0;
     max-width: 800px;
-    font-family: "Abhaya Libre", serif;
+    font-family: var(--fuente-titulos);
         font-weight: 400;
         font-style: normal;
         letter-spacing: 1px;
@@ -208,10 +231,10 @@ header {
 
 .Find_mercedes p {
     font-size: 0.95rem;
-    color: #444;
+    color:var(--color-textos-secundarios);
     max-width: 800px;
     margin: 0;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
 }
@@ -244,23 +267,23 @@ header {
 }
 
 .store_card h3 {
-    color: #ffffff;
+    color: var(--color-textos-inverso);
     font-size: 1.8rem;
     font-weight: 400;
     margin: 0 0 1.5rem 0;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
     font-weight: 400;
     font-style: normal;
 }
 
 .store_card .button {
     text-decoration: none;
-        color: #1a1a1a;
-        background-color: #ffffff;
+        color: var(--color-negro-textos);
+        background-color:var(--color-textos-inverso);
         padding: 0.6rem 1.4rem;
         border-radius: 999px;
         font-size: 0.85rem;
-        font-family: "ABeeZee", sans-serif;
+        font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
 }
@@ -268,10 +291,16 @@ header {
 /* Sección detalles */
 
 .detalles {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
     gap: 1.5rem;
     padding: 2rem;
+    scrollbar-width: none;
+}
+
+.detalles::-webkit-scrollbar {
+    display: none;
 }
 
 /* La card */
@@ -291,7 +320,7 @@ header {
     font-size: 1.3rem;
     font-weight: 400;
     margin: 0;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
     }
@@ -308,12 +337,12 @@ header {
 /* Botón empujado al fondo */
 .Card2 .card-button {
   text-decoration: none;
-        color: #1a1a1a;
-        background-color: #ffffff;
+        color:var(--color-negro-textos);
+        background-color: var(--color-textos-inverso);
         padding: 0.6rem 1.4rem;
         border-radius: 999px;
         font-size: 0.85rem;
-        font-family: "ABeeZee", sans-serif;
+        font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
         display: inline-block;
@@ -345,7 +374,7 @@ header {
     font-size: 2rem;
     font-weight: 400;
     margin: 0 0 2rem 0;
-    font-family: "Abhaya Libre", serif;
+    font-family: var(--fuente-titulos);
         font-weight: 400;
         font-style: normal;
         letter-spacing: 1px;
@@ -353,20 +382,20 @@ header {
 
 .contenido p {
     font-size: 0.9rem;
-    color: #444;
+    color:var(--color-textos-secundarios);
     line-height: 1.6;
     max-width: 320px;
     margin: 0 0 2rem 0;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
 }
 
 .contenido a {
     text-decoration: none;
-    color: #1a1a1a;
+    color:var(--color-negro-textos);
     font-size: 0.9rem;
-    border-bottom: 1px solid #1a1a1a;
+    border-bottom: 1px solid var(--color-negro-textos);
     padding-bottom: 2px;
 }
 
@@ -381,8 +410,8 @@ header {
 /* footer */
 
 .footer {
-    background-color: #0a0a0a;
-    color: #ffffff;
+    background-color:var(--color-fondo-footer);
+    color: var(--color-textos-inverso);
     padding: 4rem 3rem;
 }
 
@@ -401,7 +430,7 @@ header {
     font-size: 1.8rem;
     font-weight: 400;
     margin: 0 0 0.5rem 0;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
 }
@@ -409,7 +438,7 @@ header {
 .contact-form p {
     color: #aaa;
     margin: 0 0 2rem 0;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
 }
@@ -417,8 +446,8 @@ header {
 /* Input + botón juntos en una cápsula */
 .form-input-group {
     display: flex;
-    background-color: #1a1a1a;
-    border: 1px solid #444;
+    background-color:var(--color-negro-textos);
+    border: 1px solid var(--color-textos-secundarios);
     border-radius: 999px;
     overflow: hidden;
     /* recorta los bordes del input y botón */
@@ -432,19 +461,19 @@ header {
     border: none;
     outline: none;
     padding: 1rem 1.5rem;
-    color: #ffffff;
+    color:var(--color-textos-inverso);
     font-size: 0.9rem;
 }
 
 .form-button {
-    background-color: #ffffff;
-    color: #0a0a0a;
+    background-color: var(--color-textos-inverso);
+    color: var(--color-fondo-footer);
     border: none;
     padding: 1rem 1.8rem;
     border-radius: 999px;
     font-size: 0.9rem;
     cursor: pointer;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
 }
@@ -462,7 +491,7 @@ header {
     margin: 0;
     font-size: 0.85rem;
     color: #aaa;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
 }
@@ -489,11 +518,11 @@ header {
 }
 
 .footer__title {
-    color: #ffffff;
+    color: var(--color-textos-inverso);
     font-size: 1.2rem;
     font-weight: 400;
     margin: 0 0 1.5rem 0;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
 }
@@ -512,13 +541,13 @@ header {
     text-decoration: none;
     color: #888;
     font-size: 0.9rem;
-    font-family: "ABeeZee", sans-serif;
+    font-family: var(--fuente-parrafos);
         font-weight: 400;
         font-style: normal;
 }
 
 .footer__item a:hover {
-    color: #ffffff;
+    color:var(--color-textos-inverso);
 }
 
 /* RESPONSIVE TABLET*/
@@ -529,21 +558,6 @@ header {
     /* Cards: de 2 columnas a 1 */
     .cars_setion {
         grid-template-columns: 1fr;
-    }
-
-    /* Detalles: de 3 columnas a 1 */
-    .detalles {
-        display: flex;
-            flex-direction: row;
-            overflow-x: auto;
-            gap: 1rem;
-            padding: 1rem;
-            scrollbar-width: none;
-        }
-        
-        .detalles::-webkit-scrollbar {
-            display: none;
-        }
     }
 
     /* Carro rojo: de 2 columnas a 1 */
@@ -565,6 +579,10 @@ header {
     /* Navbar: oculta el menú y acciones */
     .navbar__menu {
         display: none;
+    }
+
+    .navbar__menuh {
+        display: block;
     }
 
     .navbar__actions {
@@ -591,25 +609,6 @@ header {
         font-size: 2.5rem;
     }
 
-    /* Detalles */
-    .detalles {
-        display: flex;
-            flex-direction: row;
-            /* cards en fila horizontal */
-        
-            overflow-x: auto;
-            /* activa el scroll horizontal */
-            gap: 1rem;
-            padding: 1rem;
-        /* grid-template-columns: 1fr;
-        padding: 1rem; */
-    }
-
-        .detalles::-webkit-scrollbar {
-            display: none;
-            /* Chrome y Safari */
-        }
-
     /* Carro rojo */
     .carro_rojo_contenido {
         grid-template-columns: 1fr;
@@ -631,4 +630,4 @@ header {
         align-items: center;
         text-align: center;
     }
-}
+}}
