@@ -1,13 +1,12 @@
 /* variables */
 :root {
-    --color-negro-textos:#1a1a1a;
-    --color-fondo-footer:#0a0a0a;
-    --color-textos-inverso:#ffffff;
-    --color-fondo-navbar:#eeeeee;
-    --fuente-parrafos:"ABeeZee", sans-serif;
-    --fuente-titulos:"Abhaya Libre",serif;
-    --color-textos-secundarios: #444;
-
+    --color-text-dark: #1a1a1a;
+    --color-footer-bg: #0a0a0a;
+    --color-text-inverse: #ffffff;
+    --color-navbar-bg: #eeeeee;
+    --font-body: "ABeeZee", sans-serif;
+    --font-headings: "Abhaya Libre", serif;
+    --color-text-secondary: #444;
 }
 
 
@@ -21,7 +20,7 @@
     justify-content: space-between;
     padding: 0 2rem;
     height: 70px;
-    background-color: var(--color-fondo-navbar);
+    background-color: var(--color-navbar-bg);
 }
 
 .navbar__logo img {
@@ -34,9 +33,9 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
-        font-style: normal; 
+        font-style: normal;
 }
 
 .navbar__menuh {
@@ -51,7 +50,7 @@
     text-decoration: none;
     color: #141615;
     font-size: 16px;
-    letter-spacing: 0,6px;
+    letter-spacing: 0.6px;
     font-weight: 500;
 }
 
@@ -80,38 +79,38 @@
     height: 90vh;
     object-fit: cover;
     display: block;
-    
+
 }
 
 .hero_text {
     position: absolute;
     left: 3rem;
     top: 3rem;
-    
+
 }
 
 .hero_text h1{
-    font-family: var(--fuente-titulos);
+    font-family: var(--font-headings);
         font-weight: 400;
         font-style: normal;
         letter-spacing: 2px;
-    color: var(--color-textos-inverso);
+    color: var(--color-text-inverse);
     font-size: 70px ;
-    margin: 0;    
+    margin: 0;
 }
 
 .hero_text p {
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
     letter-spacing: 2px;
-    color: var(--color-textos-inverso);
+    color: var(--color-text-inverse);
     font-size: 16px;
     margin: 0;
 
 }
 
-/* sección cards */
+/* cards section */
 
 .cars_setion {
     display: grid;
@@ -129,7 +128,7 @@
 }
 
 .card1 h2{
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
     font-size: 30px;
@@ -138,7 +137,7 @@
 }
 
 .card1 p {
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
         font-size: 16px;
@@ -161,12 +160,12 @@
 
 .card-button {
     text-decoration: none;
-    color:var(--color-negro-textos);
+    color: var(--color-text-dark);
     background-color: #ffffff;
     padding: 0.6rem 1.4rem;
     border-radius: 999px;
     font-size: 0.85rem;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
 }
@@ -184,7 +183,7 @@
     display: inline-block;
 }
 
-/* Colores individuales */
+/* cirles colors */
 .card_color-silver {
     background-color: #c0c0c0;
 }
@@ -205,15 +204,15 @@
     background-color: #d4a017;
 }
 
-/* El círculo activo tiene borde */
+/* The active circle has a border */
 .card_color-active {
     outline: 2px solid #555;
     outline-offset: 2px;
 }
 
-/* Sección dealer */
+/* dealer section */
 
-/* Parte superior — fondo claro */
+/* top part — light background */
 .Find_mercedes {
     padding: 3rem;
 }
@@ -223,7 +222,7 @@
     font-weight: 400;
     margin: 0 0 1rem 0;
     max-width: 800px;
-    font-family: var(--fuente-titulos);
+    font-family: var(--font-headings);
         font-weight: 400;
         font-style: normal;
         letter-spacing: 1px;
@@ -231,35 +230,32 @@
 
 .Find_mercedes p {
     font-size: 0.95rem;
-    color:var(--color-textos-secundarios);
+    color: var(--color-text-secondary);
     max-width: 800px;
     margin: 0;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
 }
 
-/* Contenedor del mapa — punto de referencia */
+/* map container — reference point */
 .map {
     position: relative;
 }
 
-.mundo {
+.world-map {
     width: 100%;
     height: 70vh;
     object-fit: cover;
     display: block;
 }
 
-/* Tarjeta flotante sobre el mapa */
+/* floating card over the map */
 .store_card {
     position: absolute;
     bottom: 3rem;
     left: 3rem;
     background-color: rgba(173, 173, 173, 0.6);
-    /* gris semitransparente */
-    /* backdrop-filter: blur(4px); */
-    /* desenfoque de cristal */
     border-radius: 16px;
     padding: 2rem;
     max-width: 320px;
@@ -267,30 +263,30 @@
 }
 
 .store_card h3 {
-    color: var(--color-textos-inverso);
+    color: var(--color-text-inverse);
     font-size: 1.8rem;
     font-weight: 400;
     margin: 0 0 1.5rem 0;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
     font-weight: 400;
     font-style: normal;
 }
 
 .store_card .button {
     text-decoration: none;
-        color: var(--color-negro-textos);
-        background-color:var(--color-textos-inverso);
+        color: var(--color-text-dark);
+        background-color: var(--color-text-inverse);
         padding: 0.6rem 1.4rem;
         border-radius: 999px;
         font-size: 0.85rem;
-        font-family: var(--fuente-parrafos);
+        font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
 }
 
-/* Sección detalles */
+/* details section */
 
-.detalles {
+.details {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
@@ -299,11 +295,11 @@
     scrollbar-width: none;
 }
 
-.detalles::-webkit-scrollbar {
+.details::-webkit-scrollbar {
     display: none;
 }
 
-/* La card */
+/* card */
 .Card2 {
     background-color: #e8e8e8;
     border-radius: 16px;
@@ -312,7 +308,7 @@
     flex-direction: column;
     gap: 1rem;
     min-width: 280px;
-        /* ancho fijo — no se encoge */
+        /* fixed width — does not shrink */
         flex-shrink: 0;
 }
 
@@ -320,12 +316,12 @@
     font-size: 1.3rem;
     font-weight: 400;
     margin: 0;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
     }
 
-/* La imagen ocupa todo el ancho de la card */
+/* the image fills full card width */
 .car-inside {
     width: 100%;
     height: 250px;
@@ -334,15 +330,15 @@
     display: block;
 }
 
-/* Botón empujado al fondo */
+/* button pushed to bottom */
 .Card2 .card-button {
   text-decoration: none;
-        color:var(--color-negro-textos);
-        background-color: var(--color-textos-inverso);
+        color: var(--color-text-dark);
+        background-color: var(--color-text-inverse);
         padding: 0.6rem 1.4rem;
         border-radius: 999px;
         font-size: 0.85rem;
-        font-family: var(--fuente-parrafos);
+        font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
         display: inline-block;
@@ -350,9 +346,9 @@
 }
 
 
-/* seccion carro rojo */
+/* red car section */
 
-/* Imagen del coche — ocupa todo el ancho */
+/* car image — full width */
 .red-car img {
     width: 100%;
     height: 70vh;
@@ -360,8 +356,8 @@
     display: block;
 }
 
-/* Parte inferior — dos columnas */
-.carro_rojo_contenido {
+/* bottom part — two columns */
+.red-car-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -369,37 +365,37 @@
     gap: 3rem;
 }
 
-/* Columna izquierda — texto */
-.contenido h2 {
+/* left column — text */
+.content h2 {
     font-size: 2rem;
     font-weight: 400;
     margin: 0 0 2rem 0;
-    font-family: var(--fuente-titulos);
+    font-family: var(--font-headings);
         font-weight: 400;
         font-style: normal;
         letter-spacing: 1px;
 }
 
-.contenido p {
+.content p {
     font-size: 0.9rem;
-    color:var(--color-textos-secundarios);
+    color: var(--color-text-secondary);
     line-height: 1.6;
     max-width: 320px;
     margin: 0 0 2rem 0;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
 }
 
-.contenido a {
+.content a {
     text-decoration: none;
-    color:var(--color-negro-textos);
+    color: var(--color-text-dark);
     font-size: 0.9rem;
-    border-bottom: 1px solid var(--color-negro-textos);
+    border-bottom: 1px solid var(--color-text-dark);
     padding-bottom: 2px;
 }
 
-/* Columna derecha — imagen de la rueda */
+/* right column — wheel image */
 .red-detail img {
     width: 100%;
     height: 500px;
@@ -410,27 +406,27 @@
 /* footer */
 
 .footer {
-    background-color:var(--color-fondo-footer);
-    color: var(--color-textos-inverso);
+    background-color: var(--color-footer-bg);
+    color: var(--color-text-inverse);
     padding: 4rem 3rem;
 }
 
-/* Parte 1 — newsletter centrada */
+/* part 1 — centered newsletter */
 .contact-form {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
-    /* centra el bloque horizontalmente */
+    /* centers the block horizontally */
     padding-bottom: 4rem;
     border-bottom: 1px solid #333;
-    /* línea separadora */
+    /* separator line */
 }
 
 .contact-form h3 {
     font-size: 1.8rem;
     font-weight: 400;
     margin: 0 0 0.5rem 0;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
 }
@@ -438,47 +434,47 @@
 .contact-form p {
     color: #aaa;
     margin: 0 0 2rem 0;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
 }
 
-/* Input + botón juntos en una cápsula */
+/* input + button together */
 .form-input-group {
     display: flex;
-    background-color:var(--color-negro-textos);
-    border: 1px solid var(--color-textos-secundarios);
+    background-color: var(--color-text-dark);
+    border: 1px solid var(--color-text-secondary);
     border-radius: 999px;
     overflow: hidden;
-    /* recorta los bordes del input y botón */
+    /* cut input and button borders */
     margin-bottom: 1.5rem;
 }
 
 .form-input-group input {
     flex: 1;
-    /* ocupa todo el espacio disponible */
+    /* fills all available space */
     background: transparent;
     border: none;
     outline: none;
     padding: 1rem 1.5rem;
-    color:var(--color-textos-inverso);
+    color: var(--color-text-inverse);
     font-size: 0.9rem;
 }
 
 .form-button {
-    background-color: var(--color-textos-inverso);
-    color: var(--color-fondo-footer);
+    background-color: var(--color-text-inverse);
+    color: var(--color-footer-bg);
     border: none;
     padding: 1rem 1.8rem;
     border-radius: 999px;
     font-size: 0.9rem;
     cursor: pointer;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
 }
 
-/* Checkbox + texto */
+/* checkbox + text */
 .form-check {
     display: flex;
     align-items: center;
@@ -491,12 +487,12 @@
     margin: 0;
     font-size: 0.85rem;
     color: #aaa;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
 }
 
-/* Iconos sociales */
+/* social icons */
 .social-media {
     display: flex;
     justify-content: center;
@@ -507,7 +503,7 @@
     width: 24px;
 }
 
-/* Parte 2 — columnas de links */
+/* part 2 — link columns */
 .footer_columns {
     display: flex;
     justify-content: center;
@@ -518,11 +514,11 @@
 }
 
 .footer__title {
-    color: var(--color-textos-inverso);
+    color: var(--color-text-inverse);
     font-size: 1.2rem;
     font-weight: 400;
     margin: 0 0 1.5rem 0;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
 }
@@ -541,42 +537,42 @@
     text-decoration: none;
     color: #888;
     font-size: 0.9rem;
-    font-family: var(--fuente-parrafos);
+    font-family: var(--font-body);
         font-weight: 400;
         font-style: normal;
 }
 
 .footer__item a:hover {
-    color:var(--color-textos-inverso);
+    color: var(--color-text-inverse);
 }
 
-/* RESPONSIVE TABLET*/
+/* RESPONSIVE TABLET */
 
 
 @media (max-width: 1024px) {
 
-    /* Cards: de 2 columnas a 1 */
+    /* cards: from 2 columns to 1 */
     .cars_setion {
         grid-template-columns: 1fr;
     }
 
-    /* Carro rojo: de 2 columnas a 1 */
-    .carro_rojo_contenido {
+    /* red car: from 2 columns to 1 */
+    .red-car-content {
         grid-template-columns: 1fr;
     }
 
-    /* Footer columnas: más espacio */
+    /* footer columns: more space */
     .footer_columns {
         max-width: 100%;
 
 }
 
-/* RESPONSIVE MOVIL*/
+/* RESPONSIVE MOBILE */
 
 
 @media (max-width: 768px) {
 
-    /* Navbar: oculta el menú y acciones */
+    /* Navbar: hide menu and actions */
     .navbar__menu {
         display: none;
     }
@@ -589,28 +585,33 @@
         display: none;
     }
 
-    /* Hero: texto más pequeño */
+    /* Hero: smaller text */
     .hero_text h1 {
         font-size: 2.5rem;
     }
 
     .hero {
         height: 60vh;
+        overflow: hidden;
     }
 
-    /* Cards */
+    .hero_img {
+        height: 60vh;
+    }
+
+    /* cards */
     .cars_setion {
         grid-template-columns: 1fr;
         padding: 1rem;
     }
 
-    /* Título dealer */
+    /* dealer title */
     .Find_mercedes h2 {
         font-size: 2.5rem;
     }
 
-    /* Carro rojo */
-    .carro_rojo_contenido {
+    /* red car */
+    .red-car-content {
         grid-template-columns: 1fr;
         padding: 2rem 1rem;
     }
@@ -619,7 +620,7 @@
         height: 300px;
     }
 
-    /* Footer */
+    /* footer */
     .footer {
         padding: 2rem 1rem;
     }
